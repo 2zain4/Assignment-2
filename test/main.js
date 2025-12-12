@@ -152,40 +152,40 @@
 
 
 
-const fs = require("node:fs");
+// const fs = require("node:fs");
 
-const path = require("node:path");
+// const path = require("node:path");
 
-const absolusePath = path.resolve("data.txt");
+// const absolusePath = path.resolve("data.txt");
 
-fs.readFile(absolusePath,{ encoding: "utf-8" }, (err, data) => {
-  if (err) {
-    console.error(err);
-  }else{  console.log(data);
-  }
-})
-try{
-    const data = fs.readFileSync(absolusePath,{ encoding: "utf-8" })
-    console.log(data);
-}catch(err){
-    console.error(err);
-}
+// fs.readFile(absolusePath,{ encoding: "utf-8" }, (err, data) => {
+//   if (err) {
+//     console.error(err);
+//   }else{  console.log(data);
+//   }
+// })
+// try{
+//     const data = fs.readFileSync(absolusePath,{ encoding: "utf-8" })
+//     console.log(data);
+// }catch(err){
+//     console.error(err);
+// }
 
-fs.writeFile("./test/data.txt", "/Hello, World!", { flag:"a"} ,(err) => {
-    console.log(err);
-})
+// fs.writeFile("./test/data.txt", "/Hello, World!", { flag:"a"} ,(err) => {
+//     console.log(err);
+// })
 
-fs.writeFileSync(path.resolve("./data.txt"), "adad", { flag:"a"} )
+// fs.writeFileSync(path.resolve("./data.txt"), "adad", { flag:"a"} )
 
-fs.unlink(path.resolve("./test/data.txt"), (err => {
-    if(err){
-        console.error({err});
-    }
-}))
+// fs.unlink(path.resolve("./test/data.txt"), (err => {
+//     if(err){
+//         console.error({err});
+//     }
+// }))
 
-if (!fs.existsSync(path.resolve("./test/data.txt"))) {
-fs.writeFile(path.resolve("./test/data.txt"), "adadada",{ flag:"a"}) }
+// if (!fs.existsSync(path.resolve("./test/data.txt"))) {
+// fs.writeFile(path.resolve("./test/data.txt"), "adadada",{ flag:"a"}) }
 
-fs.mkdir("zain/test", { recursive: true }, (err) => {console.log(err); })
+// fs.mkdir("zain/test", { recursive: true }, (err) => {console.log(err); })
 
-fs.rmSync("data", { recursive: true})
+// fs.rmSync("data", { recursive: true})
