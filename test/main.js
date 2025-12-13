@@ -137,6 +137,19 @@
 // ==================
 // Q14
 
+// const fs = require("node:fs");
+// const path = require("node:path");
+
+// function readFileContent(filePath) {
+
+// const absolutePath = path.resolve(filePath);    
+// const data= fs.readFileSync(absolutePath,{ encoding: "utf-8" });
+
+// console.log(data);
+// }
+
+// readFileContent("./test/data.text");
+
 // ==================
 // Q15
 
@@ -148,13 +161,21 @@
 
 // ==================
 
-
-
+ 
 
 
 // const fs = require("node:fs");
-
 // const path = require("node:path");
+
+// // const absolusePath = path.resolve("./data.txt");
+// const absolutePath = path.resolve("./test/data.text");
+
+// // console.log(absolusePath)
+// fs.readFile(absolutePath,{ encoding: "utf-8" },(err,data)=> {
+    
+//     console.log({data});
+// })
+
 
 // const absolusePath = path.resolve("data.txt");
 
