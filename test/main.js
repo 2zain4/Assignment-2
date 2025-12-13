@@ -153,6 +153,24 @@
 // ==================
 // Q15
 
+const fs = require("node:fs");
+const path = require("node:path");
+
+function writeFileContent(filePath) {
+
+const absolutePath = path.resolve(filePath);    
+const data= fs.writeFile(absolutePath,"Async save", (err)=>{
+    if(err){
+        console.error({err});
+    }
+} );
+
+}
+
+writeFileContent("./test/data2.text");
+
+
+
 // ==========
 // Q16
 
