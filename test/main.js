@@ -105,8 +105,37 @@
 // ===================
 // Q10
 
+// const fs = require("node:fs");
+// const path = require("node:path");
+
+// function deletFile(filePath) {
+
+// const absolutePath = path.resolve(filePath);    
+// const data= fs.unlinkSync(absolutePath);
+
+// console.log("The file.txt is deleted");
+
+// }
+
+//  deletFile("./test/data3.text");
+
+
+
 // ========
 // Q11
+
+
+// const fs = require("node:fs");
+// const path = require("node:path");
+
+// function createFolder(folderPath) {
+//   const absolutePath = path.resolve(folderPath);
+//   fs.mkdirSync(absolutePath);
+//   console.log("Success");
+// }
+
+// createFolder("./test/newFolder");
+
 
 // =================
 // Q12
@@ -153,78 +182,54 @@
 // ==================
 // Q15
 
-const fs = require("node:fs");
-const path = require("node:path");
+// const fs = require("node:fs");
+// const path = require("node:path");
 
-function writeFileContent(filePath) {
+// function writeFileContent(filePath) {
 
-const absolutePath = path.resolve(filePath);    
-const data= fs.writeFile(absolutePath,"Async save", (err)=>{
-    if(err){
-        console.error({err});
-    }
-} );
+// const absolutePath = path.resolve(filePath);    
+// const data= fs.writeFile(absolutePath,"Async save", (err)=>{
+//     if(err){
+//         console.error({err});
+//     }
+// } );
 
-}
+// }
 
-writeFileContent("./test/data2.text");
+// writeFileContent("./test/data2.text");
+
 
 
 
 // ==========
 // Q16
 
+// const fs = require("node:fs");
+// const path = require("node:path");
+
+// function checkFile(filePath) {
+// const data= fs.existsSync(filePath)
+// console.log(data);
+// }
+
+// checkFile("./test/data2.text");
+
 // ==================
 // Q17
+
+// const os = require("node:os");
+
+// function getSystem() {
+//   return {
+//     Platform: os.platform(),
+//     Arch: os.arch()
+//   };
+// }
+
+// console.log(getSystem());
 
 // ==================
 
  
 
 
-// const fs = require("node:fs");
-// const path = require("node:path");
-
-// // const absolusePath = path.resolve("./data.txt");
-// const absolutePath = path.resolve("./test/data.text");
-
-// // console.log(absolusePath)
-// fs.readFile(absolutePath,{ encoding: "utf-8" },(err,data)=> {
-    
-//     console.log({data});
-// })
-
-
-// const absolusePath = path.resolve("data.txt");
-
-// fs.readFile(absolusePath,{ encoding: "utf-8" }, (err, data) => {
-//   if (err) {
-//     console.error(err);
-//   }else{  console.log(data);
-//   }
-// })
-// try{
-//     const data = fs.readFileSync(absolusePath,{ encoding: "utf-8" })
-//     console.log(data);
-// }catch(err){
-//     console.error(err);
-// }
-
-// fs.writeFile("./test/data.txt", "/Hello, World!", { flag:"a"} ,(err) => {
-//     console.log(err);
-// })
-
-// fs.writeFileSync(path.resolve("./data.txt"), "adad", { flag:"a"} )
-
-// fs.unlink(path.resolve("./test/data.txt"), (err => {
-//     if(err){
-//         console.error({err});
-//     }
-// }))
-
-// if (!fs.existsSync(path.resolve("./test/data.txt"))) {
-// fs.writeFile(path.resolve("./test/data.txt"), "adadada",{ flag:"a"}) }
-
-// fs.mkdir("zain/test", { recursive: true }, (err) => {console.log(err); })
-
-// fs.rmSync("data", { recursive: true})
